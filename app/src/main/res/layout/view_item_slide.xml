@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/draw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0ff"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="50sp" />
+        <!--左侧菜单-->
+        <!--layout_gravity控制菜单显示的侧面位置-->
+        <LinearLayout
+            android:id="@+id/ly_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="左侧菜单" />
+        </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
